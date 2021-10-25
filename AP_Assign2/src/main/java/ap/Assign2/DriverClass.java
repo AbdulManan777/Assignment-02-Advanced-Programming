@@ -17,8 +17,8 @@ public class DriverClass {
 
 	public static void main(String[] args) throws IOException {
 		// TODO Auto-generated method stub
-		Passenger p=new Passenger("Ali","Male",24,"F-8/2 Islamabad","B-25431");
 		
+		Passenger p=new Passenger("Ali","Male",24,"F-8/2 Islamabad","B-25431");
 		FlightDetails FD=new FlightDetails(123,"23-05-2021","7:00 PM",30,"Lahore", "Karachi",8000,"Economy");
 		
 		String s1=Integer.toString(FD.getID())+" "+FD.getDate()+" "+FD.getDepartureTime()+" "+Integer.toString(FD.getPassenger())+" "+FD.getSource()+" "+FD.getDestination()+" "+Integer.toString(FD.getFare())+FD.getClass1();
@@ -46,6 +46,7 @@ public class DriverClass {
 		System.out.println("Press 1 to check for a flight on a particular Date");
 		System.out.println("Press 2 to check for fare");
 		System.out.println("Press 3 to book flight");
+		System.out.println("Press 4 to print ticket Details");
 		Scanner sc1= new Scanner(System.in);
 		choice=sc1.nextInt();
 	
@@ -105,9 +106,25 @@ public class DriverClass {
 				
 			}
 			
+            }	
+			
+			 else if(choice==4) {
+					
+				 
+				    
+				    
+					String Details=p.getPname()+" "+p.getGender()+" "+p.getAge()+" "+p.getPass()+" "+FD.getClass1();
+					
+					System.out.println(Details);
+	            	
+				
+				
+				
 			
 		}
-		
+			 
+			 
 	}
+	
 
 }
