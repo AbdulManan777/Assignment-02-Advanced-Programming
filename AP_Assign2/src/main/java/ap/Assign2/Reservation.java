@@ -56,7 +56,7 @@ public int BookFlight() throws BookingException {
 	
 	Scanner sc= new Scanner(System.in); //System.in is a standard input stream  
 	int code=981232;
-	System.out.println("Press any key to Start booking Process");  
+	System.out.println("Press 1 key to Start booking Process");  
 	int a=sc.nextInt();
 	
 	

@@ -20,30 +20,26 @@ public class DriverClass {
 		Passenger p=new Passenger("Ali","Male",24,"F-8/2 Islamabad","B-25431");
 		
 		FlightDetails FD=new FlightDetails(123,"23-05-2021","7:00 PM",30,"Lahore", "Karachi",8000,"Economy");
-		//FileOutputStream fo=new FileOutputStream("C:\\Data.txt");
+		
 		String s1=Integer.toString(FD.getID())+" "+FD.getDate()+" "+FD.getDepartureTime()+" "+Integer.toString(FD.getPassenger())+" "+FD.getSource()+" "+FD.getDestination()+" "+Integer.toString(FD.getFare())+FD.getClass1();
-		//byte [] arr=s1.getBytes();
-		//fo.write(arr);
 		
 		
 		FlightDetails FD2=new FlightDetails(124,"24-05-2021","8:00 PM",26,"Islamabad", "Karachi",12000,"Buissness");
 		
 		String s2=Integer.toString(FD2.getID())+" "+FD2.getDate()+" "+FD2.getDepartureTime()+" "+Integer.toString(FD2.getPassenger())+" "+FD2.getSource()+" "+FD2.getDestination()+" "+Integer.toString(FD2.getFare())+FD2.getClass1();
-		//byte [] arr2=s2.getBytes();
-		//fo.write(arr2);
 		
 		
         FlightDetails FD3=new FlightDetails(125,"24-05-2021","9:00 PM",27,"Islamabad", "Karachi",11000,"first");
 		
 		String s3=Integer.toString(FD3.getID())+" "+FD3.getDate()+" "+FD3.getDepartureTime()+" "+Integer.toString(FD3.getPassenger())+" "+FD3.getSource()+" "+FD3.getDestination()+" "+Integer.toString(FD3.getFare())+FD3.getClass1();
-		//byte [] arr3=s3.getBytes();
-		//fo.write(arr3);
-		//fo.close();
+		
 		BufferedWriter bw = new BufferedWriter(new FileWriter(new File(
-				"C:\\Data.txt"), true));
+				"Data.txt"), true));
 		bw.write(s1);
 		bw.newLine();
 		bw.write(s2);
+		bw.newLine();
+		bw.write(s3);
 		bw.close();
 		int choice;
 		System.out.println("What you want to check");

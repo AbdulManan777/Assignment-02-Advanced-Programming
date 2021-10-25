@@ -19,11 +19,10 @@ public class Flightavailable {
 		
 		System.out.print("Enter a Date to check for flight: ");  
 		String a = sc.next();
-		//sc.close();
-	   // System.out.println("ELement"+a);
+		
 		int count=0;
 		
-		File f1=new File("E:\\Data.txt"); //Creation of File Descriptor for input file
+		File f1=new File("Data.txt"); //Creation of File Descriptor for input file
 	      String[] words=null;  //Intialize the word Array
 	      FileReader fr = new FileReader(f1);  //Creation of File Reader object
 	      BufferedReader br = new BufferedReader(fr); //Creation of BufferedReader object
