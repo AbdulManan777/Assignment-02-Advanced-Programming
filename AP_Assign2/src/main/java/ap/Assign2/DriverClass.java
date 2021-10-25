@@ -20,7 +20,7 @@ public class DriverClass {
 		Passenger p=new Passenger("Ali","Male",24,"F-8/2 Islamabad","B-25431");
 		
 		FlightDetails FD=new FlightDetails(123,"23-05-2021","7:00 PM",30,"Lahore", "Karachi",8000,"Economy");
-		//FileOutputStream fo=new FileOutputStream("E:\\Data.txt");
+		//FileOutputStream fo=new FileOutputStream("C:\\Data.txt");
 		String s1=Integer.toString(FD.getID())+" "+FD.getDate()+" "+FD.getDepartureTime()+" "+Integer.toString(FD.getPassenger())+" "+FD.getSource()+" "+FD.getDestination()+" "+Integer.toString(FD.getFare())+FD.getClass1();
 		//byte [] arr=s1.getBytes();
 		//fo.write(arr);
@@ -40,7 +40,7 @@ public class DriverClass {
 		//fo.write(arr3);
 		//fo.close();
 		BufferedWriter bw = new BufferedWriter(new FileWriter(new File(
-				"E:\\Data.txt"), true));
+				"C:\\Data.txt"), true));
 		bw.write(s1);
 		bw.newLine();
 		bw.write(s2);
