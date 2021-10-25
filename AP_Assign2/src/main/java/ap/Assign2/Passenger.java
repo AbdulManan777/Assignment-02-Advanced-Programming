@@ -27,7 +27,25 @@ public class Passenger {
 	}
 	
 	
+	public String getPname() {
+		
+		return name;
+	}
 	
 	
+public String getGender() {
+		
+		return gender;
+	}
 	
+
+public int getAge() {
+	
+	return age;
+}
+
+public String getPass() {
+	
+	return passNo;
+}
 }
